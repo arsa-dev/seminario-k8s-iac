@@ -15,4 +15,4 @@ patches:
 images:
   - name: base-helloworld-image
     newName: traefik/whoami
-    newTag: v1.10
+    newTag: v1.11

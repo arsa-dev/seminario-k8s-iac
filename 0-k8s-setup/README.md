@@ -22,9 +22,9 @@ Se da por sentado que la herramienta de Docker Desktop ha sido instalada previam
 - Ejecutamos los siguientes comandos para añadir traefik a nuestro cluster de kubernetes:
 
   - ```bash
-    kubectl create ns traefik
     helm repo add traefik https://traefik.github.io/charts
     helm repo update
+    kubectl create ns traefik
     helm install --namespace=traefik -f traefik/values.yml traefik traefik/traefik
     ```
 
