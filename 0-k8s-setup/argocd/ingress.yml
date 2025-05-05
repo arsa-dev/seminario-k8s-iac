@@ -26,7 +26,7 @@ spec:
         - name: argocd-server
           port: http
     - kind: Rule
-      match: Host(`argocd.sem-ugr-k8s.arsahosting.com`) && Headers(`Content-Type`, `application/grpc`)
+      match: Host(`argocd.sem-ugr-k8s.arsahosting.com`) && Header(`Content-Type`, `application/grpc`)
       priority: 11
       services:
         - name: argocd-server
